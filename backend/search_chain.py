@@ -12,7 +12,6 @@ _client = MongoClient(MONGO_URI)
 _inv_col = _client[DB_NAME]["rack_inventory"]
 _racks_col = _client[DB_NAME]["racks"]
 
-
 def _mongo_search(query: str) -> list[dict]:
     """Return rack_inventory docs whose item names fuzzy-match the query."""
     words = [w for w in re.split(r"\s+", query.strip()) if len(w) > 2]

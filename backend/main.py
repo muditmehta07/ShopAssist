@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import logging
 from contextlib import asynccontextmanager
-
 import search_chain
 import nav_bridge
 
@@ -51,7 +50,6 @@ async def api_search(req: SearchRequest):
         log.error(f"Search error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-
 @app.post("/navigate")
 async def api_navigate(req: NavRequest):
     """
@@ -67,12 +65,10 @@ async def api_navigate(req: NavRequest):
         log.error(f"Nav_bridge error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-
 @app.get("/nav/status")
 async def api_nav_status():
     """Returns the current navigation state (IDLE, SENDING, NAVIGATING, ERROR)."""
     return nav_bridge.get_status()
-
 
 @app.get("/detected_items")
 async def api_detected_items():
@@ -96,15 +92,12 @@ async def api_detected_items():
         "position": pos
     }
 
-
 @app.post("/stop")
 async def api_stop():
     """Immediately stops the robot by canceling the current Nav2 goal."""
     return nav_bridge.stop_navigation()
 
-
 @app.get("/inventory")
 async def api_inventory():
     """Returns the entire store inventory grouped by rack."""
     return search_chain.get_all_inventory()
-
