@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN pip3 install --no-cache-dir pymongo python-dotenv
 
 COPY backend/requirements.txt /tmp/backend_requirements.txt
-RUN pip3 install --no-cache-dir -r /tmp/backend_requirements.txt
+RUN pip3 install --default-timeout=100 --no-cache-dir -r /tmp/backend_requirements.txt
 
 COPY backend/main.py backend/nav_bridge.py backend/search_chain.py /backend/
 

@@ -1,13 +1,3 @@
-"""
-search_chain.py
----------------
-Two-tier item search against MongoDB rack_inventory:
-
-Tier 1 (always): MongoDB regex/text search — works with zero config.
-Tier 2 (optional): LangChain + sentence-transformers semantic search —
-                   activate by setting OPENAI_API_KEY in .env
-"""
-
 import os
 import re
 from pymongo import MongoClient
@@ -38,11 +28,9 @@ def _mongo_search(query: str) -> list[dict]:
     ]
     return list(_inv_col.aggregate(pipeline))
 
-
 def _score(doc: dict, words: list[str]) -> int:
     name = doc["items"]["name"].lower()
     return sum(1 for w in words if w.lower() in name)
-
 
 def search_item(query: str) -> dict:
     """
@@ -99,7 +87,6 @@ def search_item(query: str) -> dict:
         ),
     }
 
-
 def get_nearest_rack(x: float, y: float, max_dist: float = 2.0) -> dict | None:
     """Find the nearest rack using Euclidean distance in Cartesian space."""
     racks = list(_racks_col.find({}, {"_id": 0}))
@@ -121,14 +108,12 @@ def get_nearest_rack(x: float, y: float, max_dist: float = 2.0) -> dict | None:
             
     return nearest
 
-
 def get_rack_items(rack_id: str) -> list[dict]:
     """Fetch all items for a given rack_id from rack_inventory."""
     doc = _inv_col.find_one({"rack_id": rack_id}, {"_id": 0, "items": 1})
     if doc and "items" in doc:
         return doc["items"]
     return []
-
 
 def get_all_inventory() -> list[dict]:
     """Fetch all racks and their items, returned as a list of rack-grouped items."""

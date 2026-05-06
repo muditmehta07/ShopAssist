@@ -45,6 +45,7 @@ async def api_search(req: SearchRequest):
     log.info(f"Searching for: {req.query}")
     try:
         result = search_chain.search_item(req.query)
+        log.info(f"Search result: {result}")
         return result
     except Exception as e:
         log.error(f"Search error: {e}")
@@ -60,6 +61,7 @@ async def api_navigate(req: NavRequest):
     log.info(f"Navigation requested to {req.rack_id} at {req.dock_point}")
     try:
         result = nav_bridge.navigate_to_dock(req.rack_id, req.dock_point)
+        log.info(f"Navigation result: {result}")
         return result
     except Exception as e:
         log.error(f"Nav_bridge error: {e}")
