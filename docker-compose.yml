@@ -1,5 +1,4 @@
 services:
-
   ros:
     build:
       context: .
@@ -9,31 +8,36 @@ services:
     environment:
       - DISPLAY=$DISPLAY
       - QT_X11_NO_MITSHM=1
-      - MONGO_URI=mongodb://localhost:27017
+      - MONGO_URI=mongodb://127.0.0.1:27017
       - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-    restart: unless-stopped
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: always
 
   frontend:
     build: ./frontend
     container_name: shopassist_frontend
     ports:
       - "5173:5173"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     restart: unless-stopped
 
   mongo:
     image: mongo:7
     container_name: shopassist_mongo
     ports:
-      - "27017:27017"
+      - "127.0.0.1:27017:27017"
     volumes:
       - mongo_data:/data/db
       - ./mongo-seed:/mongo-seed
       - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh
     healthcheck:
       test: [ "CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')" ]
-      interval: 10s
+      interval: 5s
       timeout: 5s
       retries: 5
     restart: unless-stopped
