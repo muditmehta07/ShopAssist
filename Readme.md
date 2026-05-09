@@ -8,7 +8,7 @@ A system that navigates the shopper to the desired item using an autonomous shop
 ## Installation
 
 > [!TIP]
-> The automatic setup only works on `Linux` and `Mac`, pls configure it yourself on that bloated `Windows`.
+> The containerized setup only works on `Linux` and `Mac`, pls configure it yourself on that bloated `Windows`.
 
 Run the following command in the root of the repository:
 ```bash
