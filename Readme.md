@@ -27,4 +27,5 @@ Anyone can contribute to this project, just send a PR.
 > [!IMPORTANT]
 > Add an `[ai]` flag to your commit message to convey that your work contains AI-generated code.
 
-Do not send PRs to the `major_project` branch.
+> [!WARNING]
+>Do not send PRs to the `major_project` branch.
