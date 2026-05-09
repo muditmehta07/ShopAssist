@@ -92,7 +92,14 @@ def get_rack_items(rack_id):
 def get_all_inventory():
     inventory_map = {d["rack_id"]: d.get("items", []) for d in _inv_col.find({})}
     racks = list(_racks_col.find({}).sort("rack_id", 1))
-    return [{"rack_id": r["rack_id"], "group": r.get("group", ""), "items": inventory_map.get(r["rack_id"], [])} for r in racks]
+    return [
+        {
+            "rack_id": r["rack_id"], 
+            "group": r.get("group", ""), 
+            "dock_point": r.get("dock_point"),
+            "items": inventory_map.get(r["rack_id"], [])
+        } for r in racks
+    ]
 
 try:
     if not _inv_col.find_one({"items.embedding": {"$exists": True}}):
