@@ -1,17 +1,13 @@
-Autonomous Shopper Assistance System
-====================================
+# Autonomous Shopper Assistance System
 
-* This is the repository for my final year project.
+> [!WARNING]
+> Kindly do not copy this project, read the [LICENSE](https://github.com/muditmehta07/asas/edit/main/LICENSE) first.
 
-|------------------------------------------------------------|
-| NOTICE                                                     |
-|------------------------------------------------------------|
-| Kindly do not copy this project, read the LICENSE first!   |
-|------------------------------------------------------------|
+## Contributing
 
-Contributing
-------------
+Anyone can contribute to this project, just send a PR.
 
-* You are free to contribute to this project by sending a pull request.
-* Add an '[ai]' flag to your commit message to convey that your work contains AI-generated code.
-* Do not send PRs to the 'major_project' branch.
+> [!IMPORTANT]
+> Add an `[ai]` flag to your commit message to convey that your work contains AI-generated code.
+
+Do not send PRs to the `major_project` branch.
