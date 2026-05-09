@@ -10,14 +10,18 @@ A system that navigates the shopper to the desired item using an autonomous shop
 > [!TIP]
 > The containerized setup only works on `Linux` and `Mac`, pls configure it yourself on that bloated `Windows`.
 
-Run the following command in the root of the repository:
+Run the following `Docker` commands in the cloned folder:
 ```bash
-sudo docker compose up --build
+xhost +local:docker
+
+sudo docker compose -f docker-compose.yaml up --build
 ```
-OR
+OR, in case you prefer `Podman`
+
 ```bash
-podman-compose build
-podman-compose up
+xhost +local:podman
+
+podman-compose -f compose.yaml up --build
 ```
   
 ## Contributing
