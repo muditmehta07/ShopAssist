@@ -4,6 +4,15 @@
 > The copyright of this project is held by a corporate.<br>
 > Kindly read the [LICENSE](https://github.com/muditmehta07/asas#license) before cloning or copying this project.
 
+## Showcase
+<div align="center">
+  <img src=".assets/IMG_dash.png" width="100%" alt="Showcase Top">
+  <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+    <img src=".assets/IMG_gazebo.png" width="49%" alt="Showcase Bottom Left">
+    <img src=".assets/IMG_rviz.png" width="49%" alt="Showcase Bottom Right">
+  </div>
+</div>
+
 ## Key Features
 
 | Feature | Description |
@@ -13,16 +22,6 @@
 | **Dashboard** | A React-based frontend for user interaction. |
 | **Gazebo Simulation** | Gazebo + Rviz2 for simulation. |
 | **Containerized** | Ready-to-go setup using Docker or Podman. |
-
-
-## Showcase
-<div align="center">
-  <img src=".assets/IMG_dash.png" width="100%" alt="Showcase Top">
-  <div style="display: flex; justify-content: space-between; margin-top: 10px;">
-    <img src=".assets/IMG_gazebo.png" width="49%" alt="Showcase Bottom Left">
-    <img src=".assets/IMG_rviz.png" width="49%" alt="Showcase Bottom Right">
-  </div>
-</div>
 
 ## Installation
 
