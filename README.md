@@ -57,8 +57,6 @@
 - **Linux** or **macOS** (via Docker or Podman)
 - `xhost` installed (optional, for GUI forwarding)
 
-### Getting Started
-
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/muditmehta07/asas.git
@@ -82,7 +80,8 @@
    xhost +local:podman
    podman-compose -f compose.yaml up --build
    ```
-
+4. **Open dashboard at** http://localhost:5173
+   
 ## Contributing
 
 Anyone can contribute to this project, just send a PR.
