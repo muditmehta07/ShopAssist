@@ -1,5 +1,8 @@
 <div align="center">
   <h1>ShopAssist</h1>
+
+  <sub>Formerly Autonomous Shopper Assistance System<sub>
+  
   <p>
     ShopAssist is an 
     <a href="https://en.wikipedia.org/wiki/Automated_convenience_store">
