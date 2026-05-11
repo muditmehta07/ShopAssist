@@ -29,7 +29,7 @@
 
 > [!WARNING]
 > The copyright of this project is held by a corporate.<br>
-> Kindly read the [LICENSE](https://github.com/muditmehta07/asas#license) before cloning or copying this project.
+> Kindly read the [LICENSE](https://github.com/muditmehta07/ShopAssist#license) before cloning or copying this project.
 
 ## Showcase
 <div align="center">
@@ -59,8 +59,8 @@
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/muditmehta07/asas.git
-   cd asas
+   git clone https://github.com/muditmehta07/ShopAssist.git
+   cd ShopAssist
    ```
 
 2. **Allow Docker/Podman to access X server:**
@@ -96,7 +96,7 @@ Anyone can contribute to this project, just send a PR.
 ## License
 
 This project is developed and maintained by [muditmehta07](https://github.com/sponsors/muditmehta07/).<br>
-Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. Read full [LICENSE](https://github.com/muditmehta07/asas/blob/main/LICENSE).
+Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. Read full [LICENSE](https://github.com/muditmehta07/ShopAssist/blob/main/LICENSE).
 > [!WARNING]
 > Under the terms of the AGPL-3.0, any modifications or use of this software in a network service must be made available under the same license. For commercial licensing, proprietary integrations, or partnerships, please contact [here](mailto:muditmehta27@outlook.com).
 
