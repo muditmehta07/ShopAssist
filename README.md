@@ -63,12 +63,16 @@
    cd asas
    ```
 
-2. **Allow Docker to access X server:**
+2. **Allow Docker/Podman to access X server:**
    ```bash
    xhost +local:docker
    ```
+   or
+   ```bash
+   xhost +local:podman
+   ```
 
-3. **Launch:**
+4. **Launch:**
 
    **Using Docker:**
    ```bash
@@ -77,10 +81,9 @@
 
    **Using Podman:**
    ```bash
-   xhost +local:podman
    podman-compose -f compose.yaml up --build
    ```
-4. **Open dashboard at** http://localhost:5173
+5. **Open dashboard at** http://localhost:5173
    
 ## Contributing
 
