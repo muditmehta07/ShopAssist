@@ -3,10 +3,10 @@
 ## Showcase
 
 <div align="center">
-  <img src=".assets/IMG_dash.png" width="100%" alt="Showcase Top">
+  <img src=".assets/IMG_dash.png" width="75%" alt="Showcase Top">
   <div style="display: flex; justify-content: space-between; margin-top: 10px;">
-    <img src=".assets/IMG_gazebo.png" width="49%" alt="Showcase Bottom Left">
-    <img src=".assets/IMG_rviz.png" width="49%" alt="Showcase Bottom Right">
+    <img src=".assets/IMG_gazebo.png" width="35%" alt="Showcase Bottom Left">
+    <img src=".assets/IMG_rviz.png" width="35%" alt="Showcase Bottom Right">
   </div>
 </div>
 
