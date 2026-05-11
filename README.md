@@ -13,15 +13,18 @@
   </div>
 </div>
 
-## Key Features
 
-| Feature | Description |
-| :--- | :--- |
-| **Autonomous Navigation** | Uses ROS2 Humble + Nav2 path planning and obstacle avoidance. |
-| **AI Search** | Uses LangChain + Ollama for inventory lookup. |
-| **Dashboard** | A React-based frontend for user interaction. |
-| **Gazebo Simulation** | Gazebo + Rviz2 for simulation. |
-| **Containerized** | Ready-to-go setup using Docker or Podman. |
+## Folders
+
+```text
+|
+├── backend          # fastapi server
+├── frontend         # react dashboard
+├── ros_ws           # ros2 workspace
+├── rack_model       # rack model (duh)
+├── mongo-seed       # database
+└── docker-compose.yml
+```
 
 ## Installation
 
@@ -53,18 +56,6 @@
    xhost +local:podman
    podman-compose -f compose.yaml up --build
    ```
-
-## Structure
-
-```text
-|
-├── backend          # fastapi server
-├── frontend         # react dashboard
-├── ros_ws           # ros2 workspace
-├── rack_model       # rack model (duh)
-├── mongo-seed       # database
-└── docker-compose.yml
-```
 
 ## Contributing
 
