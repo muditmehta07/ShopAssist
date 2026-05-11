@@ -98,6 +98,6 @@ Anyone can contribute to this project, just send a PR.
 This project is developed and maintained by [muditmehta07](https://github.com/sponsors/muditmehta07/).<br>
 Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. Read full [LICENSE](https://github.com/muditmehta07/asas/blob/main/LICENSE).
 > [!WARNING]
-> Under the terms of the AGPL-3.0, any modifications or use of this software in a network service must be made available under the same license. For commercial licensing, proprietary integrations, or partnerships, please contact [here](mailto:muditmehta@outlook.com)
+> Under the terms of the AGPL-3.0, any modifications or use of this software in a network service must be made available under the same license. For commercial licensing, proprietary integrations, or partnerships, please contact [here](mailto:muditmehta27@outlook.com).
 
 Copyright © 2026 FOUR M Education and Technology Private Limited.
