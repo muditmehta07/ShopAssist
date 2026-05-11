@@ -1,4 +1,24 @@
-# Autonomous Shopper Assistance System
+<div align="center">
+  <h1>ShopAssist</h1>
+  <p>
+    ShopAssist is an 
+    <a href="https://en.wikipedia.org/wiki/Automated_convenience_store">
+      Autonomous Shopper Assistance System
+    </a> 
+    which aims to provide an effortless shopping experience to customers in retail environments.
+    Disguised as a shopping cart, it navigates autonomously to lead the user to their desired products or follow them around, removing the physical hassle of handling a cart.
+  </p>
+</div>
+
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+[![ROS2](https://img.shields.io/badge/ROS2-%2339457E.svg?logo=ros&logoColor=fff)](#)
+[![LangChain](https://img.shields.io/badge/LangChain-1c3c3c.svg?logo=langchain&logoColor=fff)](#)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff)](#)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)
+[![Podman](https://img.shields.io/badge/Podman-%2339457E?logo=podman&logoColor=fff)](#)
+[![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=fff)](#)
+
+---
 
 > [!WARNING]
 > The copyright of this project is held by a corporate.<br>
@@ -17,7 +37,6 @@
 ## Folders
 
 ```text
-|
 ├── backend          # fastapi server
 ├── frontend         # react dashboard
 ├── ros_ws           # ros2 workspace
