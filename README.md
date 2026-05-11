@@ -8,7 +8,7 @@
     which aims to provide an effortless shopping experience to customers in retail environments.
     Disguised as a shopping cart, it navigates autonomously to lead the user to their desired products or follow them around, removing the physical hassle of handling a cart.
   </p>
-</div>
+  <br>
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 [![ROS2](https://img.shields.io/badge/ROS2-%2339457E.svg?logo=ros&logoColor=fff)](#)
@@ -17,6 +17,9 @@
 [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)
 [![Podman](https://img.shields.io/badge/Podman-%2339457E?logo=podman&logoColor=fff)](#)
 [![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=fff)](#)
+
+<br>
+</div>
 
 ---
 
