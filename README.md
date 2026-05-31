@@ -1,7 +1,7 @@
 <div align="center">
   <h1>ShopAssist</h1>
 
-  <sub>Formerly Autonomous Shopper Assistance System<sub>
+  <sub>Formerly known as SmartAssist.<sub>
   
   <p>
     ShopAssist is an 
